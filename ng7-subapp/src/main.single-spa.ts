@@ -1,4 +1,5 @@
-
+import 'zone.js';
+import 'core-js/es7/reflect';
 import { enableProdMode, NgZone } from '@angular/core';
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -17,10 +18,10 @@ const lifecycles = singleSpaAngular({
     singleSpaPropsSubject.next(singleSpaProps);
     return platformBrowserDynamic().bootstrapModule(AppModule);
   },
-  template: '<app1-root />',
+  template: '<app3-root />',
   Router,
   NgZone: NgZone,
-  domElementGetter: () => document.getElementById('angular-app-1')
+  domElementGetter: () => document.getElementById('angular-app-3')
 });
 
 export const bootstrap = lifecycles.bootstrap;

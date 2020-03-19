@@ -17,10 +17,10 @@ const lifecycles = singleSpaAngular({
     singleSpaPropsSubject.next(singleSpaProps);
     return platformBrowserDynamic().bootstrapModule(AppModule);
   },
-  template: '<app1-root />',
+  template: '<app2-root />',
   Router,
   NgZone: NgZone,
-  domElementGetter: () => document.getElementById('angular-app-1')
+  domElementGetter: () => document.getElementById('angular-app-2')
 });
 
 export const bootstrap = lifecycles.bootstrap;

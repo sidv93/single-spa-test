@@ -9,6 +9,6 @@ const loadAngularApp = async () => {
 
 
 export const registerAngularApp = () => {
-    singleSpa.registerApplication('angular-app', loadAngularApp, matchingPathname(['/angular', '/']));
+    singleSpa.registerApplication('angular-app-1', loadAngularApp, matchingPathname(['/angular', '/']));
 };
 
